@@ -1,0 +1,76 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.redondo{
+    background-color: rgb(255, 100, 255);
+    width: 300px;
+    height: 300px;
+    /* Arredondando div */
+    border-radius: 100px 80px;
+    /* Criando espaçamento interno */
+    padding: 50px 100px 30px 10px;
+}
+
+.redondo h1{
+    background-color: rgb(100, 255, 255);
+}
+
+.quadrado{
+    /* background-color: rgb(255, 255, 100); */
+    background-image: url(../img/javascript.jpg);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+}
+
+.quadrado p{
+    background-color: rgba(100, 255, 255,0.8);
+}
+
+.quadrado h1{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 240, 0.2);
+}
+
+.gradiente{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(190deg, rgb(255,255,0), rgb(255,0,0), rgb(0,0,240));
+    padding: 10px;
+}
+
+.gradiente h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 2px 3px black;
+}
+
+.amarelo{
+    background-color: rgb(255,255,0);
+    width: 300px;
+    height: 220px;
+    border: 2px solid black;
+    transition: width 2s, transform 2;
+}
+
+#rotacao{
+    margin-left: 100px;
+}
+
+#rotacao:hover{
+    width: 400px;
+    transform: rotate(-20deg);
+}
+
+.noticias{
+    background-color: rgb(128,128, 128);
+    width: 300px;
+    height: 50px;
+    overflow: hidden;
+    transition: height 2s;
+}
+
+.noticias:hover{
+    height: 200px;    
+}
