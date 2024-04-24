@@ -1,0 +1,78 @@
+.exemplo_background{
+    /* Endereço de imagem */
+    /* background-image: url("../img/rosto.png"); */
+    /* Colocandoo imagem para repetir horizontalmente */
+    /* background-repeat: repeat-x;  */
+    /* Colocandoo imagem para repetir verticalmente */
+    /* background-repeat: repeat-y; */
+    /* Colocando a imagem apenas uma vez */
+    /* background-repeat: no-repeat; */
+    /* Colocando posição */
+    /* background-position: center top; */
+    /* Tornando o background fixo */
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+    /* background pode reeceber todos os parametros */
+    background: rgb(145, 145, 145) url(../img/rosto.png) no-repeat center top fixed;
+}
+/* borda pontilhada */
+.pontilhado{
+    border-style: dotted;
+}
+/* Bordad tracejada */
+.tracejado{
+    border-style: dashed;    
+}
+/* Selecionando a espessura */
+.borda_maior{
+    border-style:solid;
+    border-width: 1px;
+}
+/* borda lado especifico */
+.borda_topo{
+    border-top: 2px solid rgb(144, 200, 50);
+}
+.principal{
+    background-color: rgb(144, 200, 50);
+    height: 800px;
+}
+.conteudo{
+    background-color:pink;
+    /* colocando margem em um lado */
+    margin-left: 80px;
+    /* Colocando margem em cima e embaixo depois direita e esquerda */
+    /* margin:80px 20px; */
+    /* Criando margem nos quatro cantos */
+    /* margin: 20px 40px 60px 80px; */
+    height: 300px;
+    width: 400px;
+    /* Colocando padding de um lado */
+    padding-top: 50px;
+    /* padding: 80px 20px; */
+    padding: 20px 40px 60px 80px;
+}
+/* Começa sem ser exibido */
+.conteudo_dropdown{
+    display: none;
+    background-color: blueviolet;
+    width: 100px;
+    color: white;
+}
+/* Coloca uma linha no item da lista e remove o estilo lista  */
+.conteudo_dropdown li{
+    border-bottom: 1px solid white;
+    list-style-type: none;
+    padding: 5px 2px;
+}
+/* Deixa mais escuro o item selecionado */
+.conteudo_dropdown li:hover{
+    background-color: rgb(100, 100, 100);
+}
+/* Remove o padding do ul que vem por padrão */
+.conteudo_dropdown ul{
+    padding: 0;
+}
+/* Exibe menu com display block */
+.dropdown:hover .conteudo_dropdown{
+    display: block;
+}
