@@ -1,0 +1,42 @@
+.alinhado {
+    width: 500px;
+    text-align: justify;
+}
+.linhacima {
+    text-decoration: overline;
+}
+.linhameio {
+    text-decoration: line-through;
+}
+.linhabaixo {
+    text-decoration: underline;
+}
+.linhacima_baixo {
+    text-decoration: overline underline;
+}
+.maiusculo {
+    text-transform: uppercase;
+}
+.minusculo {
+    text-transform: lowercase;
+}
+.palavras_espacadas {
+    word-spacing: 10px;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.outra_fonte{
+   font-family:  "Roboto", sans-serif;
+}
+.italico{
+    font-style: italic;
+    /* Por o texto em negrito */
+    font-weight: bold;
+    /* fonte-wight trabalha com a espessura da fote tendo normal, lighter, bold entre ooutros */
+    color: pink
+}
+.cor{
+    color: red;
+    font-size: 1000px;
+}
