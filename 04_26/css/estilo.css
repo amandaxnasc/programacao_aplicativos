@@ -1,0 +1,69 @@
+.linha{
+    background-color: aquamarine;
+}
+.linha li{
+    /* Mostrando uma lista na horizaontal */
+    display: inline;
+}
+.linha ul{
+    padding: 0;
+}
+#menu{
+    background-color: rgb(15, 161, 240);
+    color: white;
+}
+.bloqueado{
+    display: block;
+}
+.imagem{
+    width: 500px;
+    height: 250px;
+}
+.imagem img{
+    /* Max widht e height forcam o elemento a ter um tamanho maximo doo
+    elemento que está contido */
+    max-width: 100%;
+    max-height: 100%;
+}
+.fixo{
+    /* position fixed usa como referencia a tela toda */
+    border: 8px solid rgb(17, 176, 249);
+    background-color: rgb(89, 76, 240);
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+}
+.conteudo{
+    width: 500px;
+    height: 800px;
+    background-color: rgb(104, 166, 237);
+    border: 4px solid gray;
+    position: relative;
+}
+.texto{
+    /* Position absolute usa como referencia o elemento que esta contido */
+    position:absolute;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+}
+.anuncio{
+    position: relative;
+    width: 800px;
+    font-size: 80px;
+    font-style: bold;
+}
+.anuncio img{
+    max-width: 100%;
+    opacity: 0.5;
+}
+/* Colocando conteduo no centro da div */
+.anuncio div {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
