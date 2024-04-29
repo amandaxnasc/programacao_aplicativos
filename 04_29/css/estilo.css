@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(125, 125, 125);
+}
+.container{
+background-color: rgb(255, 255, 255);
+/* width: 1080px; */
+width: 75vw; /*vh viewport widght, viewport é 
+a página que está sendo exibida */
+height: 100vh; /*vh viewport height, viewport é 
+a página que está sendo exibida */
+margin: 0 auto;
+}
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto; 
+}
+.grid-item{
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+/*Ao usar o @media podemos criar layouts responsivos*/
+@media(max-width:720px){
+    .grid-container{
+        grid-template-columns: auto;
+    }
+}
