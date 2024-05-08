@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //crie um array com o nome e o municipio de cada aluno
+        //crie uma tabela e com laco de repeticao preencha   
+
+        let alunoCidade = [
+            ["Amanda", "Serra"],
+            ["Anna Julya", "Vitoria"],
+            ["Aymar", "Vila Velha"],
+            ["Daniel", "Serra"],
+            ["Deivid", "Vila Velha"],
+            ["Emanoel", "Vitoria"],
+            ["Gabriel", "Serra"],
+            ["Heloisa", "Vila Velha"],
+            ["Isaac", "Vila Velha"],
+            ["Joao", "Serra"],
+            ["Marco", "Vila Velha"],
+            ["Matheus", "Cariacica"],
+            ["Pietro", "Vitoria"],
+            ["Samara", "Vila Velha"],
+            ["Sarah", "Onde Judas perdeu as botas"],
+            ["Vitor", "Vitoria"]
+        ]
+
+    </script>
+</head>
+
+<body>
+    <table id="aluno">
+
+    </table>
+    <script>
+        let tabela = "<tr> <th>Aluno</th> <th>Cidade</th> </tr>"
+        for (let i = 0; i < alunoCidade.length; i++) {
+            tabela += "<tr><td>"+alunoCidade[i][0] +"</td><td>"+alunoCidade[i][1]+"</td></tr>"
+        }
+        document.getElementById("aluno").innerHTML = tabela;
+    </script>
+    
+</body>
+
+</html>
