@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/carro.css">
+    <script>
+        // Classes sao abstracoes finitas do mundo real
+        class Carro{
+            constructor(marca,placa,cor,ano){
+                this.marca = marca
+                this.placa = placa
+                this.cor = cor
+                this.ano = ano
+            }
+        }
+        //Inicializando um array vazio
+        let carros = []
+        //Criando um carro uno
+        let uno = new Carro("fiat","XXY-4502", "vermelho", 2012)
+        carros.push(uno) //Acrescentando o uno no array de carros
+
+        //Criando um carro fusco
+        let fusca = new Carro("Volkswagen", "uuu-8978", "branco", 1980)
+        carros.push(fusca) //Acrescentando o fusca no array de carros
+
+        console.log(carros)
+
+        function carregarCarros(){
+            
+            let html = "<tr><th>Marca</th><th>Placa</th><th>Cor</th><th>Ano</th></tr>"
+            
+            for (let i = 0; i < carros.length; i++){
+                html += "<tr>"
+                    html += "<td>"+carros[i].marca+"</td>"
+                    html += "<td>"+carros[i].placa+"</td>"
+                    html += "<td>"+carros[i].cor+"</td>"
+                    html += "<td>"+carros[i].ano+"</td>"
+                    html += "</tr>"
+            }
+            document.getElementById("listaCarros").innerHTML = html
+        }
+        function cadastrarCarro(){
+            let marca = document.getElementById("marca").value
+            let placa = document.getElementById("placa").value
+            let cor = document.getElementById("cor").value
+            let ano= parseInt(document.getElementById("ano").value)
+
+            let carro = new Carro(marca,placa,cor,ano)
+
+            carros.push(carro)
+            carregarCarros()
+        }
+    </script>
+</head>
+<body onload="carregarCarros()">
+    <h1>Carros</h1>
+    <table id="listaCarros">
+
+    </table>
+    <div id="cadastro">
+        <label for="">Marca</label>
+        <input type="text" name="" id="marca">
+        <br>
+        <label for="">Placa</label>
+        <input type="text" name="" id="placa">
+        <br>
+        <label for="">Cor</label>
+        <input type="text" name="" id="cor">
+        <br>
+        <label for="">Ano</label>
+        <input type="text" name="" id="ano">
+        <button onclick="cadastrarCarro()">Cadastrar</button>
+    </div>
+</body>
+</html>
