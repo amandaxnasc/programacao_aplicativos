@@ -22,3 +22,9 @@ update parafusos set nome="fenda" where id_parafuso=1;
 delete from parafusos where id_parafuso=1;
 
 SELECT * FROM parafusos;
+
+Para entrar na pasta no TERMINAL!
+
+cd loja_parafusos 
+cd server (entrar no server)
+ npx nodemon src /App.js
