@@ -66,7 +66,7 @@ class ParafusoController{
             }
         ).catch(
             resposta =>{
-                console.debug("Erro ao deletar parafusos")
+                console.debug("Erro ao deletar parafuso")
                 res.status(resposta[0]).json(resposta[1])
             }
         );        
